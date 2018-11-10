@@ -1,16 +1,24 @@
+import { AnimeInfoService } from './anime-info.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
+import { FicheAnimeComponent } from './fiche-anime/fiche-anime.component';
+import { FormsModule } from "@angular/forms";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FicheAnimeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AnimeInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

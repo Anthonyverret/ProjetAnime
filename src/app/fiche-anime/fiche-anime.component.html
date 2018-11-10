@@ -1,0 +1,8 @@
+<div>
+  <p>
+    {{data[0].title}}
+   <img src= "{{data[0].image_url}}">
+   {{data[12].synopsis}}
+  </p>
+</div>
+<p *ngFor="let current of data">{{current.title}}<br/><img src="{{current.image_url}}"/></p>
