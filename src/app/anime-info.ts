@@ -1,3 +1,4 @@
+
 export class AnimeInfo {
     public title:string = "";
     public image_url:string = "";

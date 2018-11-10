@@ -6,12 +6,14 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { FicheAnimeComponent } from './fiche-anime/fiche-anime.component';
 import { FormsModule } from "@angular/forms";
+import { TriAnimePipe } from './tri-anime.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FicheAnimeComponent
+    FicheAnimeComponent,
+    TriAnimePipe
   ],
   imports: [
     BrowserModule,
